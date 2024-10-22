@@ -56,7 +56,7 @@ nav > a {
   font-size: 2rem;
   color: var(--clFontPink);
   letter-spacing: 2px;
-  margin: 3rem;
+  margin: 2rem;
 }
 nav > a span {
   color: var(--clFontBlue);
@@ -64,7 +64,7 @@ nav > a span {
 }
 nav ul {
   list-style: none;
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 nav ul li {
   display: inline-block;
@@ -139,7 +139,7 @@ nav .hamburger {
   justify-content: space-between;
   width: 25px;
   height: 20px;
-  margin-right: 4rem;
+  margin-right: 2rem;
 }
 nav .hamburger span {
   width: 100%;
@@ -151,7 +151,7 @@ nav .hamburger span {
   display: flex;
   flex-wrap: wrap;
   max-width: 1000px;
-  margin: 1.5rem 3rem;
+  margin: 1.5rem 2rem;
   padding: 3rem 0 1rem 0;
 }
 
@@ -369,11 +369,10 @@ nav .hamburger span {
   margin: 2rem;
   margin-bottom: 5rem;
   text-align: center;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -409,20 +408,15 @@ nav .hamburger span {
 }
 #galeri .container .gambar .anggota .kita {
   text-align: center;
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
 }
 #galeri .container .gambar .anggota .kita img {
-  width: 125px;
+  width: 120px;
   border-radius: 150px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: 0.3s;
 }
-#galeri .container .gambar .anggota .kita > img:hover {
-  width: 130px;
-}
-
-/* Gambar di klik */
 
 footer {
   background-color: #161c20;
@@ -442,7 +436,7 @@ footer .footer {
 }
 
 footer .footer .kanan {
-  padding: 2rem 5rem;
+  padding: 2rem 2rem;
   width: 50%;
 }
 footer .footer .kanan > a {
@@ -581,5 +575,9 @@ footer aside p span {
   }
   nav .active-items {
     display: flex;
+  }
+
+  footer .footer .kiri {
+    padding-left: 2rem;
   }
 }

@@ -1,0 +1,79 @@
+footer {
+  background-color: #161c20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  aside {
+    margin: 2rem;
+    text-align: center;
+    color: var(--clFontBlack);
+    font-size: 0.8rem;
+    p span {
+      color: red;
+      font-size: 1rem;
+    }
+  }
+}
+footer .footer {
+  border-bottom: 1px solid var(--clFontBlack);
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  .kanan {
+    padding: 2rem 2rem;
+    width: 50%;
+    > a {
+      color: white;
+      text-decoration: none;
+      font-size: 2.5rem;
+      font-weight: 700;
+      display: block;
+    }
+    p {
+      font-size: 0.9rem;
+      color: rgb(198, 198, 198);
+      font-style: italic;
+      margin: 0.8rem 0;
+    }
+    .ikon {
+      display: flex;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        margin-top: 1rem;
+        margin-right: 0.8rem;
+        border-radius: 50%;
+        color: #8ca0b4;
+        border: 2px solid #8ca0b4;
+        transition: 0.2s;
+        &:hover {
+          color: white;
+          border-color: white;
+          background-color: var(--clFontBlue);
+        }
+      }
+    }
+  }
+  .kiri {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5rem;
+    a {
+      color: rgb(198, 198, 198);
+      text-decoration: none;
+      margin: 0.5rem;
+      transition: 0.2s;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

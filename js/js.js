@@ -19,12 +19,14 @@ const span3 = document.querySelector("nav .hamburger span:nth-child(3)");
 
 hamburger.addEventListener("click", function () {
   navItems.classList.toggle("active-items");
-  span1.classList.toggle("span-satu");
-  span2.classList.toggle("span-dua");
-  span3.classList.toggle("span-tiga");
+
+  // Silang pada hamburger klik
+  // span1.classList.toggle("span-satu");
+  // span2.classList.toggle("span-dua");
+  // span3.classList.toggle("span-tiga");
 });
 
-// klik diluar nav untuk menghilangkan
+// klik diluar nav untuk menghilangkan navber
 const navBar = document.querySelector("nav");
 
 document.addEventListener("click", function (e) {
@@ -44,101 +46,14 @@ const bulet = document.querySelector(".bulet");
 darkBtn.addEventListener("click", function () {
   bulet.classList.toggle("geser");
 
-  // NavBar
-  navBar.classList.toggle("dark-mode");
-  document.querySelector("nav ul li .home").classList.toggle("dark-mode");
-  document.querySelector("nav ul li .about").classList.toggle("dark-mode");
-  document.querySelector("nav ul li .galeri").classList.toggle("dark-mode");
-  navItems.classList.toggle("dark-mode");
+  // Color-Scheme HTML
+  document.querySelector("html").classList.toggle("dark-mode");
 
-  document
-    .querySelector("nav .hamburger span:nth-child(1)")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("nav .hamburger span:nth-child(2)")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("nav .hamburger span:nth-child(3)")
-    .classList.toggle("dark-mode");
-  
-    
-  // Home
+  // Hero Image
   document
     .querySelector("section .container .light-img")
     .classList.toggle("pasif");
   document
     .querySelector("section .container .dark-img")
     .classList.toggle("aktif");
-
-  document.querySelector("section#home").classList.toggle("dark-mode");
-  document
-    .querySelector("section#home .container .kata h1")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("section#home .container .kata p")
-    .classList.toggle("dark-mode");
-
-  // About
-  document.querySelector("section#about").classList.toggle("dark-mode");
-  document
-    .querySelector("section#about .container .kanan h4")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("section#about .container .kanan p")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("section#about .container .kanan em")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("section#about .container .kiri h4")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("section#about .container .kiri p")
-    .classList.toggle("dark-mode");
-
-  // Galeri
-  document.querySelector("section#galeri").classList.toggle("dark-mode");
-  document
-    .querySelector("section#galeri .gambar")
-    .classList.toggle("dark-mode");
-
-  document
-    .querySelector("#galeri .container .gambar .kepala .masri")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("#galeri .container .gambar .kepala .nur")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("#galeri .container .gambar .anggota .murdi img")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("#galeri .container .gambar .anggota .santo img")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("#galeri .container .gambar .anggota .rohaila img")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("#galeri .container .gambar .anggota .lina img")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("#galeri .container .gambar .anggota .dimas img")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("#galeri .container .gambar .anggota .nia img")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("#galeri .container .gambar .anggota .yani img")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("#galeri .container .gambar .anggota .dela img")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("#galeri .container .gambar .anggota .nakni img")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("#galeri .container .gambar .anggota .dewi img")
-    .classList.toggle("dark-mode");
-  document
-    .querySelector("#galeri .container .gambar .anggota .dika img")
-    .classList.toggle("dark-mode");
 });

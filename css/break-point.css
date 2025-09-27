@@ -14,9 +14,8 @@
     cursor: pointer;
     span {
       transition: 0.2s ease-in-out;
-      &.dark-mode {
-        background-color: white;
-      }
+      background-color: light-dark(black, white);
+
       &:nth-child(1) {
         transform-origin: top left;
       }
@@ -43,14 +42,10 @@
       padding: 1rem 0.5rem;
       flex-direction: column;
       border-radius: 7px;
-      background-color: white;
-      box-shadow: 0 1px 5px rgb(0 0 0 /0.3);
+      background-color: light-dark(white, #161c20);
+      box-shadow: 0 1px 5px light-dark(#0000004d, #ffffff4d);
       cursor: pointer;
       transition: 0.2s;
-      &.dark-mode {
-        background-color: #161c20;
-        box-shadow: 0 1px 5px rgba(255, 255, 255, 0.3);
-      }
     }
     ul li a:hover::after {
       transform-origin: 0;

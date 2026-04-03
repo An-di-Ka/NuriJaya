@@ -4,22 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toko Nuri Jaya</title>
-
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
     <!-- my style -->
     <link rel="stylesheet" href="css/global.css" />
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section id="home" class="home main-section">
       <div class="container">
         <div class="img-container">
           <img
-            class="light-img hero-img"
-            src="img/bg/hero1.jpg"
+            class="hero-img"
+            src="img/bg/hero2.jpg"
             alt="Keluarga Nuri Jaya"
           />
         </div>
 
-        <div class="greetings-wrapper">
+        <div class="thumbnails">
           <h2 class="greetings">Halo semua 👋, Kami Keluarga</h2>
           <h1 class="title">Nuri Jaya</h1>
           <p class="desc">
@@ -33,7 +41,7 @@
               href="https://web.facebook.com/profile.php?id=100083863567862&locale=id_ID"
               class="facebook"
             >
-              <svg width="24" height="24" viewBox="0 0 24 24">
+              <svg width="30" height="30" viewBox="-4 0 20 22">
                 <path
                   d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
                 />
@@ -42,7 +50,7 @@
             </a>
 
             <a target="_blank" href="#" class="instagram">
-              <svg width="24" height="24" viewBox="0 0 24 24">
+              <svg width="30" height="30" viewBox="0 5 21 11">
                 <path
                   d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
                 />
@@ -51,26 +59,21 @@
             </a>
           </div>
 
-          <a
-            target="_blank"
-            href="https://web.facebook.com/profile.php?id=100083863567862&locale=id_ID"
-            class="cto_btn"
-          >
-            Mari Berkenalan
-          </a>
+          <a href="#about"><button class="cto-btn">Mari Berkenalan</button></a>
         </div>
       </div>
     </section>
 
     <section id="about" class="about main-section">
       <div class="container">
-        <img
-          class="about-img"
-          src="img/bg/dark2.jpg"
-          alt="gambar kebersamaan kami di pantai marina"
-        />
+        <div class="about-img">
+          <img
+            src="img/bg/dark2.jpg"
+            alt="gambar kebersamaan kami di pantai marina"
+          />
+        </div>
 
-        <div class="about-thumbnails">
+        <div class="thumbnails">
           <h2 class="section-title">Pertemuan Kami</h2>
           <p class="desc">
             Kami <strong>dipertemukan</strong> di sini, bukan hanya untuk
@@ -84,43 +87,49 @@
             bersama.
           </p>
           <div class="quote">
-            "Aku datang bukan untuk <strong>mengambil</strong> hakku, tapi aku
-            datang untuk <strong>melaksanakan</strong> kewajibanku."
+            " Aku datang bukan untuk <strong>mengambil</strong> hakku, tapi aku
+            datang untuk <strong>melaksanakan</strong> kewajibanku. "
           </div>
         </div>
       </div>
     </section>
 
     <section id="galerry" class="gallery main-section">
-      <div class="gallery-thumbnails">
-        <h2 class="section-title">Wajah-Wajah di Balik Rak</h2>
-        <p>
-          Kami dididik untuk mencari solusi dibalik permasalahan, bukan untuk
-          saling menyalahkan.
-        </p>
-      </div>
+      <div class="container">
+        <div class="gallery-thumbnails">
+          <h2 class="section-title">Wajah-Wajah di Balik Rak</h2>
+          <p class="desc">
+            Kami dididik untuk mencari solusi dibalik permasalahan, bukan untuk
+            saling menyalahkan.
+          </p>
+        </div>
 
-      <div id="owner" class="owner-container"></div>
-      <div id="staff" class="staff-container"></div>
+        <div id="card" class="card-container"></div>
+      </div>
     </section>
 
     <section id="activities" class="activities main-section">
-      <div class="tumbnails">
-        <h2 class="section-title">Moment Yang Berbicara</h2>
-      </div>
+      <div class="container">
+        <div class="tumbnails">
+          <h2 class="section-title">Moment Yang Berbicara</h2>
+        </div>
 
-      <div id="moment" class="moment-container"></div>
+        <div id="moment" class="moment-container"></div>
+      </div>
     </section>
 
-    <footer>
+    <footer class="main-section">
       <div class="container">
         <div class="title">
-          <h1>NuriJaya</h1>
+          <div class="logo">
+            <img src="img/logo.webp" alt="Gambar Logo Nuri" />
+            <h1>NuriJaya</h1>
+          </div>
           <p>
             Jl. Braja Harjosari <br />
             Kec. Braja Selebah <br />
             Kab. Lampung Timur <br />
-            - Barat daya Lapangan Braja Harjosari
+            _Barat daya Lapangan Braja Harjosari
           </p>
         </div>
 
@@ -130,7 +139,7 @@
             href="https://web.facebook.com/profile.php?id=100083863567862&locale=id_ID"
             class="facebook"
           >
-            <svg width="24" height="24" viewBox="0 0 24 24">
+            <svg width="30" height="30" viewBox="-4 0 20 22">
               <path
                 d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
               />
@@ -139,7 +148,7 @@
           </a>
 
           <a target="_blank" href="#" class="instagram">
-            <svg width="24" height="24" viewBox="0 0 24 24">
+            <svg width="30" height="30" viewBox="0 5 21 11">
               <path
                 d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
               />
@@ -149,13 +158,18 @@
 
           <div class="quote">
             <em>
-              " Pembunuh terbesar dalam hubungan bukanlah pertengkaran,
-              melainkan ketidak pedulian. "
+              " Pembunuh terbesar dalam hubungan bukanlah <b>pertengkaran</b>,
+              melainkan <b>ketidak pedulian</b>. "
             </em>
+            <br />
             <strong class="quoter">dr. Jhon Gotman</strong>
           </div>
         </div>
       </div>
+      <p class="copy">&copy;Copyright, <b>Andika</b> 31 March 2026</p>
     </footer>
+
+    <script src="js/script.js"></script>
+    ri
   </body>
 </html>

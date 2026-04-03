@@ -1,0 +1,99 @@
+.home {
+  .container {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 2em;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  .img-container {
+    img {
+      object-fit: cover;
+    }
+    display: flex;
+    height: auto;
+    margin-bottom: 2em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    &::before,
+    &::after {
+      position: absolute;
+      content: " ";
+      z-index: -1;
+    }
+    &::before {
+      top: -0.5em;
+      left: -0.5em;
+      width: 80%;
+      height: 60%;
+      border: 3px solid var(--accent);
+      border-bottom: none;
+      border-right: none;
+    }
+    &::after {
+      bottom: -0.5em;
+      right: -0.5em;
+      width: 50%;
+      height: 20%;
+      border: 3px solid var(--accent);
+      border-top: none;
+      border-left: none;
+    }
+
+    order: 1;
+    @media (min-width: 425px) {
+      &::before {
+        top: -0.75em;
+        left: -0.75em;
+        border: 5px solid var(--accent);
+        border-bottom: none;
+        border-right: none;
+      }
+      &::after {
+        bottom: -0.75em;
+        right: -0.75em;
+        border: 5px solid var(--accent);
+        border-top: none;
+        border-left: none;
+      }
+    }
+    @media (min-width: 768px) {
+      order: 3;
+    }
+  }
+
+  .thumbnails {
+    order: 2;
+    .greetings {
+      font-size: 1.25rem;
+      color: var(--primary);
+      font-weight: 600;
+      word-spacing: -2px;
+    }
+    .title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+
+    .social-platform {
+      display: flex;
+      gap: 1em;
+      margin-block: 1em 2em;
+      font-weight: 500;
+    }
+    .cto-btn {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: white;
+      background-color: var(--primary);
+      padding: 0.5em 1em;
+      border-radius: 0.5em;
+      text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    }
+  }
+}

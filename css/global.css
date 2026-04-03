@@ -1,3 +1,18 @@
+@import "home.css";
+@import "about.css";
+@import "footer.css";
+@import "gallery.css";
+
+:root {
+  --primary: rgb(0, 153, 173);
+  --secondary: rgb(0, 77, 87);
+  --text-primary: black;
+  --text-secondary: rgb(30, 30, 30);
+  --accent: rgb(255, 166, 0);
+  --accent-secondary: palevioletred;
+  --box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
 *,
 ::before,
 ::after {
@@ -5,7 +20,64 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  line-height: 1.618;
+  background-color: rgb(242, 253, 255);
+}
 img {
   width: 100%;
+}
+button,
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+.main-section {
+  width: 100%;
+  padding-inline: 1rem;
+  padding-block: 6rem 1rem;
+  @media (min-width: 425px) {
+    padding-inline: 2rem;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.section-title {
+  position: relative;
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: black;
+    border-radius: 10px;
+    height: 5px;
+    z-index: 2;
+  }
+  &:after {
+    top: -2rcap;
+    left: -1rcap;
+    width: 15rcap;
+  }
+  &:before {
+    top: -1rcap;
+    left: 10rcap;
+    width: 9rcap;
+  }
+}
+.desc {
+  color: rgb(31, 31, 31);
+  font-size: 1rem;
+}
+strong {
+  color: black;
 }

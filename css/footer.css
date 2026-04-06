@@ -1,6 +1,8 @@
 footer {
   background-color: var(--secondary);
   color: white;
+  margin-top: 5rem;
+  position: relative;
 
   .container {
     display: flex;
@@ -8,60 +10,64 @@ footer {
     align-items: start;
     gap: 2rem;
     margin-bottom: 1rem;
+
+    .title {
+      .logo {
+        margin-left: -1.5rem;
+        display: flex;
+        align-items: center;
+        img {
+          width: 80px;
+          margin-right: -2rem;
+        }
+        h1 {
+          font-size: 2.5rem;
+          font-weight: 800;
+        }
+      }
+    }
+
+    .link {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+
+      a {
+        font-weight: 500;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: flex-end;
+        gap: 0.5rem;
+        svg {
+          fill: white;
+        }
+      }
+      .quote {
+        margin-top: 1rem;
+        em {
+          b {
+            font-weight: 700;
+          }
+        }
+        .quoter {
+          display: inline-block;
+          text-decoration: overline;
+          margin-top: 0.5rem;
+          color: inherit;
+        }
+
+        margin-bottom: 5em;
+      }
+    }
+
     @media (min-width: 768px) {
       flex-direction: row;
       .title {
         width: 90%;
+        margin-left: 1.5rem;
       }
     }
   }
-  .logo {
-    margin-left: -1.5rem;
-    display: flex;
-    align-items: center;
-    img {
-      width: 80px;
-      margin-right: -2rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-    }
-  }
-  .link {
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-
-    a {
-      font-weight: 500;
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: flex-end;
-      gap: 0.5rem;
-      svg {
-        fill: white;
-      }
-    }
-    .quote {
-      margin-top: 1rem;
-      em {
-        b {
-          font-weight: 700;
-        }
-      }
-      .quoter {
-        display: inline-block;
-        text-decoration: overline;
-        margin-top: 0.5rem;
-        color: inherit;
-      }
-
-      margin-bottom: 5em;
-    }
-  }
-
-  position: relative;
 
   .copy {
     position: absolute;

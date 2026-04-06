@@ -2,6 +2,7 @@
 @import "about.css";
 @import "footer.css";
 @import "gallery.css";
+@import "activities.css";   
 
 :root {
   --primary: rgb(0, 153, 173);

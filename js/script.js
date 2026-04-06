@@ -103,8 +103,76 @@ const staff = [
     desc: "Mitigasi rak dan pengalola transaksi",
   },
 ];
+const activities = [
+  {
+    id: 1,
+    title: "Syukuran",
+    date: "Februari 2023",
+    location: "Toko Nuri Jaya",
+    desc: "Iki syukuran opo yo. Lupa saya...",
+    img: "img/activities/1-syukuran.webp",
+  },
+  {
+    id: 2,
+    title: "Pantai Mutun",
+    date: "Mei 2023",
+    location: "Pantai Mutun",
+    desc: "Ini adalah jalan-jalan pertama kami, setelah Toko Nuri Jaya dibuka. Di sini banyak sekali permainan yang kami lakukan.",
+    img: "img/activities/2-pantai mutun.webp",
+  },
+  {
+    id: 3,
+    title: "Galungan",
+    date: "Februari 2024",
+    location: "Rumah Mbak Ela",
+    desc: "Kami main ke tempat Mbak Ela yang sedang melaksanakan Hari Raya Galungan.",
+    img: "img/activities/3-galungan.webp",
+  },
+  {
+    id: 4,
+    title: "Pantai Marina",
+    date: "Maret 2026",
+    location: "Pantai Marina",
+    desc: "Di tahun kedua berdirinya Toko. Kami pergi jalan-jalan ke Pantai Marinsa.",
+    img: "img/activities/4-pantai marina.webp",
+  },
+  {
+    id: 5,
+    title: "Permainan",
+    date: "Maret 2026",
+    location: "Toko Nuri Jaya",
+    desc: "Disela-sela kesibukan kami di Toko. Ketua malah bagi-bagi hadiah.",
+    img: "img/activities/5-permainan.webp",
+  },
+  {
+    id: 6,
+    title: "Mancing",
+    date: "Maret 2026",
+    location: "Gazebo Spontan",
+    desc: "Tiba-tiba ngajal mancing. Gas lah...",
+    img: "img/activities/6-mancing.webp",
+  },
+  {
+    id: 7,
+    title: "Makan-Makan",
+    date: "Maret 2026",
+    location: "Rumah Mbak Lina & Bang T",
+    desc: "Sepertinya acara makan-makan kami belum selesai. Lanjut...",
+    img: "img/activities/7-makan.webp",
+  },
+  {
+    id: 8,
+    title: "Isah-isah",
+    date: "Maret 2026",
+    location: "Rumah Mbak Lina & Bang-T",
+    desc: "Heh... Ahkirnya beres-beres juga.",
+    img: "img/activities/8-cuci piring.webp",
+  },
+];
 
-const cardEl = document.getElementById("card");
+const cardEl = document.getElementById("card"),
+  momentEl = document.getElementById("moment");
+
 staff.map((item) => {
   cardEl.innerHTML += `
     <div class="staff-card ${item.class}">
@@ -112,6 +180,22 @@ staff.map((item) => {
       <div class="staff-info">
         <h3 class="staff-name">${item.name}</h3>
         <p>${item.desc}</p>
+      </div>
+    </div>
+  `;
+});
+
+activities.map((item) => {
+  momentEl.innerHTML += `
+    <div class="card-moment">
+      <div class="moment-img">
+        <img src="${item.img}" alt="${item.title}" />
+      </div>
+      <div class="moment-info">
+        <p class="moment-date">${item.date}</p>
+        <h3 class="moment-title">${item.title}</h3>
+        <p class="moment-desc">${item.desc}</p>
+        <p class="moment-location">Lokasi: ${item.location}</p>
       </div>
     </div>
   `;

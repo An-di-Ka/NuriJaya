@@ -165,7 +165,7 @@ const activities = [
     title: "Isah-isah",
     date: "Maret 2026",
     location: "Rumah Mbak Lina & Bang-T",
-    desc: "Heh... Ahkirnya beres-beres juga.",
+    desc: "Huh 😮‍💨... <br/> Ahkirnya beres-beres juga.",
     img: "img/activities/8-cuci piring.webp",
   },
 ];
@@ -179,7 +179,7 @@ staff.map((item) => {
       <img class="staff-img" src="${item.img}" alt="${item.name}" />
       <div class="staff-info">
         <h3 class="staff-name">${item.name}</h3>
-        <p>${item.desc}</p>
+        <p class="desc">${item.desc}</p>
       </div>
     </div>
   `;
@@ -194,7 +194,7 @@ activities.map((item) => {
       <div class="moment-info">
         <p class="moment-date">${item.date}</p>
         <h3 class="moment-title">${item.title}</h3>
-        <p class="moment-desc">${item.desc}</p>
+        <p class="desc">${item.desc}</p>
         <p class="moment-location">Lokasi: ${item.location}</p>
       </div>
     </div>

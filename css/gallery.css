@@ -1,5 +1,5 @@
 .gallery {
-  background-color: #a5cbd2;
+  background-color: #b8d7dd;
 }
 .gallery .section-title {
   margin-bottom: 1rem;
@@ -7,8 +7,34 @@
 
 .card-container {
   margin-top: 3rem;
+  padding-bottom: 3rem;
   column-width: 200px;
   column-gap: 2rem;
+
+  @media (min-width: 496px) {
+    column-height: 350px;
+  }
+  @media (min-width: 540px) {
+    column-height: 400px;
+  }
+  @media (min-width: 620px) {
+    column-height: 450px;
+  }
+  @media (min-width: 727px) {
+    column-height: 360px;
+  }
+  @media (min-width: 820px) {
+    column-height: 400px;
+  }
+  @media (min-width: 900px) {
+    column-height: 425px;
+  }
+  @media (min-width: 963px) {
+    column-height: 350px;
+  }
+  @media (min-width: 1000px) {
+    column-height: 375px;
+  }
 }
 
 .staff-card {
@@ -17,7 +43,7 @@
 
   .staff-img {
     object-fit: cover;
-    aspect-ratio: 1/1.1;
+    aspect-ratio: 1/1.15;
     object-fit: cover;
     box-shadow: 0px 3px 7px #00000050;
     border-radius: calc(5px * 1.618);
@@ -29,9 +55,9 @@
     .staff-name {
       font-weight: 600;
       font-size: 1.2rem;
+      line-height: 2;
     }
     p {
-      font-size: 0.9rem;
       color: rgb(31, 31, 31);
     }
   }
@@ -43,8 +69,8 @@
   border: 1px solid #ddd;
   box-shadow: 0px 3px 7px #00000050;
   box-shadow: 0px 3px 7px #ffffff25;
+  background-color: #ffffff80;
 
-  background-color: #ffffff75;
   position: relative;
 
   .staff-img {
@@ -70,9 +96,9 @@
     content: "👑";
     display: block;
     position: absolute;
-    bottom: 0;
+    top: 100%;
     right: 0;
-    transform: translateY(-65%);
+    transform: translateY(-100%);
     font-size: 2.5rem;
   }
 }

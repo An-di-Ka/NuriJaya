@@ -16,6 +16,7 @@
     border-radius: 10px;
   }
 }
+
 .card-moment {
   display: flex;
   flex-direction: column;
@@ -38,7 +39,7 @@
   .moment-info {
     max-width: 400px;
     margin-top: 1rem;
-    padding-left: 0.5rem;
+    padding-inline: 0.5rem;
     .moment-date {
       text-decoration: underline;
       text-underline-offset: 5px;
@@ -69,18 +70,39 @@
     aspect-ratio: 1;
     border-radius: 30px;
     background-color: #002c2e;
-    /* background-color: var(--accent); */
   }
 }
+
 @media (min-width: 768px) {
   .moment-container {
-    gap: 5rem;
+    padding-left: 0;
+    gap: 0;
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
   .card-moment {
-    flex-direction: row;
-    gap: 2rem;
-    .moment-img {
-      width: 50%;
+    width: 100%;
+    gap: 0.5rem;
+
+    &:not(:first-child) {
+      margin-top: -9rem;
+    }
+    &:nth-child(even) {
+      .moment-img,
+      .moment-info {
+        align-self: flex-end;
+      }
+    }
+
+    &::before {
+      display: none;
+    }
+
+    .moment-img,
+    .moment-info {
+      width: 45%;
       max-height: 400px;
     }
   }

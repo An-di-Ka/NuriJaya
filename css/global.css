@@ -1,12 +1,17 @@
+@import "nav.css";
 @import "home.css";
 @import "about.css";
 @import "footer.css";
 @import "gallery.css";
 @import "activities.css";
 
+/* All of my style is Mobile First, 
+  But in NAVBAR, i use Desktop First
+ */
+
 :root {
   --primary: rgb(0, 153, 173);
-  --secondary: rgb(0, 77, 87);
+  --secondary: #004d57;
   --text-primary: black;
   --text-secondary: rgb(30, 30, 30);
   --accent: rgb(255, 166, 0);
@@ -20,12 +25,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Jost", sans-serif;
   font-size: 16px;
   line-height: 1.618;
   background-color: rgb(242, 253, 255);
+  overflow-x: hidden;
 }
 img {
   width: 100%;
@@ -42,7 +49,7 @@ a {
 .main-section {
   width: 100%;
   padding-inline: 1rem;
-  padding-block: 6rem 1rem;
+  padding-block: 7.5rem 1rem;
   @media (min-width: 425px) {
     padding-inline: 2rem;
   }

@@ -200,3 +200,27 @@ activities.map((item) => {
     </div>
   `;
 });
+
+// Handle Hamburger Menu
+const hamburger = document.querySelector("#hamburger"),
+  navBar = document.querySelector("nav .nav-bar"),
+  span1 = document.querySelector("nav .hamburger span:nth-child(1)"),
+  span2 = document.querySelector("nav .hamburger span:nth-child(2)"),
+  span3 = document.querySelector("nav .hamburger span:nth-child(3)"),
+  navItems = document.querySelectorAll("nav .nav-bar a");
+hamburger.addEventListener("click", function () {
+  navBar.classList.toggle("active");
+  span1.classList.toggle("span-satu");
+  span2.classList.toggle("span-dua");
+  span3.classList.toggle("span-tiga");
+});
+
+// Klik, untuk keluar dari NavBar Mobile
+navItems.forEach((item) => {
+  item.addEventListener("click", function () {
+    navBar.classList.remove("active");
+    span1.classList.remove("span-satu");
+    span2.classList.remove("span-dua");
+    span3.classList.remove("span-tiga");
+  });
+});

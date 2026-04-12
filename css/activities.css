@@ -54,9 +54,10 @@
       color: black;
       line-height: 2;
     }
-    p {
+    .desc {
       font-size: 0.9rem;
       color: rgb(31, 31, 31);
+      margin-block: 0.5rem;
     }
   }
 
@@ -93,6 +94,7 @@
       .moment-img,
       .moment-info {
         align-self: flex-end;
+        text-align: right;
       }
     }
 

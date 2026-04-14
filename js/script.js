@@ -56,7 +56,7 @@ const staff = [
   {
     class: "staff",
     name: "Jefri Ali Fernando 👷‍♂️",
-    img: "img/staff/dimas ramadan.webp",
+    img: "img/staff/jefri ali fernando.jpg",
     position: "Karyawan",
     desc: "Tulang punggung barang gudang",
   },

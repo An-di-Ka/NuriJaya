@@ -207,7 +207,9 @@ const hamburger = document.querySelector("#hamburger"),
   span1 = document.querySelector("nav .hamburger span:nth-child(1)"),
   span2 = document.querySelector("nav .hamburger span:nth-child(2)"),
   span3 = document.querySelector("nav .hamburger span:nth-child(3)"),
-  navItems = document.querySelectorAll("nav .nav-bar a");
+  navItems = document.querySelectorAll("nav .nav-bar a"),
+  navLogo = document.querySelector(".nav-logo");
+
 hamburger.addEventListener("click", function () {
   navBar.classList.toggle("active");
   span1.classList.toggle("span-satu");
@@ -217,10 +219,12 @@ hamburger.addEventListener("click", function () {
 
 // Klik, untuk keluar dari NavBar Mobile
 navItems.forEach((item) => {
-  item.addEventListener("click", function () {
-    navBar.classList.remove("active");
-    span1.classList.remove("span-satu");
-    span2.classList.remove("span-dua");
-    span3.classList.remove("span-tiga");
-  });
+  item.addEventListener("click", removeClass);
 });
+
+function removeClass() {
+  navBar.classList.remove("active");
+  span1.classList.remove("span-satu");
+  span2.classList.remove("span-dua");
+  span3.classList.remove("span-tiga");
+}

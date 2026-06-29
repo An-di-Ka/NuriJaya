@@ -168,6 +168,14 @@ const activities = [
     desc: "Huh 😮‍💨... <br/> Ahkirnya beres-beres juga.",
     img: "img/activities/8-cuci piring.webp",
   },
+  {
+    id: 9,
+    title: "Sanggar Beach 😎",
+    date: "Mei 2026",
+    location: "Sangar Beach",
+    desc: "Tahun ke-Empat dari Toko dan <br/> jalan-jalan ke-Tiga kami. 😁",
+    img: "img/activities/9-sanggar beach.jpg",
+  },
 ];
 
 const cardEl = document.getElementById("card"),
